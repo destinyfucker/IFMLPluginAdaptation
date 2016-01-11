@@ -241,7 +241,7 @@ public class IFMLActionImpl extends InteractionFlowElementImpl implements IFMLAc
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.IFML_ACTION__ACTION_EVENTS:

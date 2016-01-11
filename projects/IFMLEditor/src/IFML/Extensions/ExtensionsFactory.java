@@ -184,6 +184,123 @@ public interface ExtensionsFactory extends EFactory {
 	SetContextEvent createSetContextEvent();
 
 	/**
+	 * Returns a new object of class '<em>Screen</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Screen</em>'.
+	 * @generated
+	 */
+	Screen createScreen();
+
+	/**
+	 * Returns a new object of class '<em>Tool Bar</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Tool Bar</em>'.
+	 * @generated
+	 */
+	ToolBar createToolBar();
+
+	/**
+	 * Returns a new object of class '<em>Mobile Component</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mobile Component</em>'.
+	 * @generated
+	 */
+	MobileComponent createMobileComponent();
+
+	/**
+	 * Returns a new object of class '<em>Mobile Element Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mobile Element Event</em>'.
+	 * @generated
+	 */
+	MobileElementEvent createMobileElementEvent();
+
+	/**
+	 * Returns a new object of class '<em>Mobile System Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mobile System Event</em>'.
+	 * @generated
+	 */
+	MobileSystemEvent createMobileSystemEvent();
+
+	/**
+	 * Returns a new object of class '<em>Battery Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Battery Event</em>'.
+	 * @generated
+	 */
+	BatteryEvent createBatteryEvent();
+
+	/**
+	 * Returns a new object of class '<em>Storage Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Storage Event</em>'.
+	 * @generated
+	 */
+	StorageEvent createStorageEvent();
+
+	/**
+	 * Returns a new object of class '<em>Mobile Action</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mobile Action</em>'.
+	 * @generated
+	 */
+	MobileAction createMobileAction();
+
+	/**
+	 * Returns a new object of class '<em>Camera Action</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Camera Action</em>'.
+	 * @generated
+	 */
+	CameraAction createCameraAction();
+
+	/**
+	 * Returns a new object of class '<em>Microphone Action</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Microphone Action</em>'.
+	 * @generated
+	 */
+	MicrophoneAction createMicrophoneAction();
+
+	/**
+	 * Returns a new object of class '<em>Mobile Action Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mobile Action Event</em>'.
+	 * @generated
+	 */
+	MobileActionEvent createMobileActionEvent();
+
+	/**
+	 * Returns a new object of class '<em>Camera Action Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Camera Action Event</em>'.
+	 * @generated
+	 */
+	CameraActionEvent createCameraActionEvent();
+
+	/**
+	 * Returns a new object of class '<em>Microphone Action Event</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Microphone Action Event</em>'.
+	 * @generated
+	 */
+	MicrophoneActionEvent createMicrophoneActionEvent();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

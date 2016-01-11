@@ -10,6 +10,9 @@ import IFML.DataTypes.DataTypesPackage;
 
 import IFML.DataTypes.impl.DataTypesPackageImpl;
 
+import IFML.Extensions.BatteryEvent;
+import IFML.Extensions.CameraAction;
+import IFML.Extensions.CameraActionEvent;
 import IFML.Extensions.Details;
 import IFML.Extensions.Device;
 import IFML.Extensions.ExtensionsFactory;
@@ -22,24 +25,33 @@ import IFML.Extensions.IFMLWindow;
 import IFML.Extensions.JumpEvent;
 import IFML.Extensions.LandingEvent;
 import IFML.Extensions.List;
+import IFML.Extensions.MicrophoneAction;
+import IFML.Extensions.MicrophoneActionEvent;
+import IFML.Extensions.MobileAction;
+import IFML.Extensions.MobileActionEvent;
+import IFML.Extensions.MobileComponent;
+import IFML.Extensions.MobileElementEvent;
+import IFML.Extensions.MobileSystemEvent;
 import IFML.Extensions.OnLoadEvent;
 import IFML.Extensions.OnSelectEvent;
 import IFML.Extensions.OnSubmitEvent;
 import IFML.Extensions.Position;
+import IFML.Extensions.Screen;
 import IFML.Extensions.SelectionField;
 import IFML.Extensions.SetContextEvent;
 import IFML.Extensions.SimpleField;
+import IFML.Extensions.StorageEvent;
+import IFML.Extensions.ToolBar;
 import IFML.Extensions.UserRole;
 import IFML.Extensions.ValidationRule;
 
-import IFML.Mobile.MobilePackage;
-import IFML.Mobile.impl.MobilePackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+
 import org.eclipse.uml2.uml.UMLPackage;
 
 /**
@@ -183,6 +195,97 @@ public class ExtensionsPackageImpl extends EPackageImpl implements ExtensionsPac
 	private EClass setContextEventEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass screenEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass toolBarEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mobileComponentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mobileElementEventEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mobileSystemEventEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass batteryEventEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass storageEventEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mobileActionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cameraActionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass microphoneActionEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mobileActionEventEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass cameraActionEventEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass microphoneActionEventEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -234,19 +337,16 @@ public class ExtensionsPackageImpl extends EPackageImpl implements ExtensionsPac
 		// Obtain or create and register interdependencies
 		DataTypesPackageImpl theDataTypesPackage = (DataTypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DataTypesPackage.eNS_URI) instanceof DataTypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DataTypesPackage.eNS_URI) : DataTypesPackage.eINSTANCE);
 		CorePackageImpl theCorePackage = (CorePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) instanceof CorePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(CorePackage.eNS_URI) : CorePackage.eINSTANCE);
-		MobilePackageImpl theMobilePackage = (MobilePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(MobilePackage.eNS_URI) instanceof MobilePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(MobilePackage.eNS_URI) : MobilePackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theExtensionsPackage.createPackageContents();
 		theDataTypesPackage.createPackageContents();
 		theCorePackage.createPackageContents();
-		theMobilePackage.createPackageContents();
 
 		// Initialize created meta-data
 		theExtensionsPackage.initializePackageContents();
 		theDataTypesPackage.initializePackageContents();
 		theCorePackage.initializePackageContents();
-		theMobilePackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theExtensionsPackage.freeze();
@@ -487,6 +587,123 @@ public class ExtensionsPackageImpl extends EPackageImpl implements ExtensionsPac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getScreen() {
+		return screenEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getToolBar() {
+		return toolBarEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMobileComponent() {
+		return mobileComponentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMobileElementEvent() {
+		return mobileElementEventEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMobileSystemEvent() {
+		return mobileSystemEventEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getBatteryEvent() {
+		return batteryEventEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getStorageEvent() {
+		return storageEventEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMobileAction() {
+		return mobileActionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCameraAction() {
+		return cameraActionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMicrophoneAction() {
+		return microphoneActionEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMobileActionEvent() {
+		return mobileActionEventEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCameraActionEvent() {
+		return cameraActionEventEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMicrophoneActionEvent() {
+		return microphoneActionEventEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public ExtensionsFactory getExtensionsFactory() {
 		return (ExtensionsFactory)getEFactoryInstance();
 	}
@@ -553,6 +770,32 @@ public class ExtensionsPackageImpl extends EPackageImpl implements ExtensionsPac
 		createEReference(landingEventEClass, LANDING_EVENT__JUMPING_EVENTS);
 
 		setContextEventEClass = createEClass(SET_CONTEXT_EVENT);
+
+		screenEClass = createEClass(SCREEN);
+
+		toolBarEClass = createEClass(TOOL_BAR);
+
+		mobileComponentEClass = createEClass(MOBILE_COMPONENT);
+
+		mobileElementEventEClass = createEClass(MOBILE_ELEMENT_EVENT);
+
+		mobileSystemEventEClass = createEClass(MOBILE_SYSTEM_EVENT);
+
+		batteryEventEClass = createEClass(BATTERY_EVENT);
+
+		storageEventEClass = createEClass(STORAGE_EVENT);
+
+		mobileActionEClass = createEClass(MOBILE_ACTION);
+
+		cameraActionEClass = createEClass(CAMERA_ACTION);
+
+		microphoneActionEClass = createEClass(MICROPHONE_ACTION);
+
+		mobileActionEventEClass = createEClass(MOBILE_ACTION_EVENT);
+
+		cameraActionEventEClass = createEClass(CAMERA_ACTION_EVENT);
+
+		microphoneActionEventEClass = createEClass(MICROPHONE_ACTION_EVENT);
 	}
 
 	/**
@@ -607,6 +850,19 @@ public class ExtensionsPackageImpl extends EPackageImpl implements ExtensionsPac
 		jumpEventEClass.getESuperTypes().add(theCorePackage.getThrowingEvent());
 		landingEventEClass.getESuperTypes().add(theCorePackage.getCatchingEvent());
 		setContextEventEClass.getESuperTypes().add(theCorePackage.getThrowingEvent());
+		screenEClass.getESuperTypes().add(theCorePackage.getViewContainer());
+		toolBarEClass.getESuperTypes().add(theCorePackage.getViewContainer());
+		mobileComponentEClass.getESuperTypes().add(theCorePackage.getViewComponent());
+		mobileElementEventEClass.getESuperTypes().add(theCorePackage.getViewElementEvent());
+		mobileSystemEventEClass.getESuperTypes().add(theCorePackage.getSystemEvent());
+		batteryEventEClass.getESuperTypes().add(this.getMobileSystemEvent());
+		storageEventEClass.getESuperTypes().add(this.getMobileSystemEvent());
+		mobileActionEClass.getESuperTypes().add(theCorePackage.getIFMLAction());
+		cameraActionEClass.getESuperTypes().add(this.getMobileAction());
+		microphoneActionEClass.getESuperTypes().add(this.getMobileAction());
+		mobileActionEventEClass.getESuperTypes().add(theCorePackage.getActionEvent());
+		cameraActionEventEClass.getESuperTypes().add(this.getMobileActionEvent());
+		microphoneActionEventEClass.getESuperTypes().add(this.getMobileActionEvent());
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(onSubmitEventEClass, OnSubmitEvent.class, "OnSubmitEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -652,6 +908,32 @@ public class ExtensionsPackageImpl extends EPackageImpl implements ExtensionsPac
 		initEReference(getLandingEvent_JumpingEvents(), this.getJumpEvent(), this.getJumpEvent_LandingEvent(), "jumpingEvents", null, 0, -1, LandingEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(setContextEventEClass, SetContextEvent.class, "SetContextEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(screenEClass, Screen.class, "Screen", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(toolBarEClass, ToolBar.class, "ToolBar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(mobileComponentEClass, MobileComponent.class, "MobileComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(mobileElementEventEClass, MobileElementEvent.class, "MobileElementEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(mobileSystemEventEClass, MobileSystemEvent.class, "MobileSystemEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(batteryEventEClass, BatteryEvent.class, "BatteryEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(storageEventEClass, StorageEvent.class, "StorageEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(mobileActionEClass, MobileAction.class, "MobileAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(cameraActionEClass, CameraAction.class, "CameraAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(microphoneActionEClass, MicrophoneAction.class, "MicrophoneAction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(mobileActionEventEClass, MobileActionEvent.class, "MobileActionEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(cameraActionEventEClass, CameraActionEvent.class, "CameraActionEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(microphoneActionEventEClass, MicrophoneActionEvent.class, "MicrophoneActionEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

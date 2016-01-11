@@ -5,6 +5,7 @@ package IFML.DataTypes;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
@@ -16,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model
  * @generated
  */
-public enum SystemEventType implements Enumerator
-{
+public enum SystemEventType implements Enumerator {
 	/**
 	 * The '<em><b>Time</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -27,6 +27,7 @@ public enum SystemEventType implements Enumerator
 	 * @ordered
 	 */
 	TIME(0, "time", "time"),
+
 	/**
 	 * The '<em><b>Special Condition</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -36,6 +37,7 @@ public enum SystemEventType implements Enumerator
 	 * @ordered
 	 */
 	SPECIAL_CONDITION(0, "specialCondition", "specialCondition"),
+
 	/**
 	 * The '<em><b>Action Completion</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -45,6 +47,7 @@ public enum SystemEventType implements Enumerator
 	 * @ordered
 	 */
 	ACTION_COMPLETION(0, "actionCompletion", "actionCompletion");
+
 	/**
 	 * The '<em><b>Time</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -232,4 +235,5 @@ public enum SystemEventType implements Enumerator
 	public String toString() {
 		return literal;
 	}
-}
+	
+} //SystemEventType

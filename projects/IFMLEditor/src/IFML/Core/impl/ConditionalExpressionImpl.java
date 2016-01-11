@@ -316,7 +316,7 @@ public class ConditionalExpressionImpl extends ExpressionImpl implements Conditi
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CorePackage.CONDITIONAL_EXPRESSION__OUT_INTERACTION_FLOWS:
@@ -406,7 +406,7 @@ public class ConditionalExpressionImpl extends ExpressionImpl implements Conditi
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.CONDITIONAL_EXPRESSION__NAME:

@@ -4,7 +4,6 @@ package IFML.Core;
 
 import org.eclipse.uml2.uml.Classifier;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>UML Domain Concept</b></em>'.

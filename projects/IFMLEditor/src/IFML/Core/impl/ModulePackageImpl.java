@@ -79,7 +79,7 @@ public class ModulePackageImpl extends ModularizationElementImpl implements Modu
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CorePackage.MODULE_PACKAGE__MODULARIZATION_ELEMENTS:
@@ -122,7 +122,7 @@ public class ModulePackageImpl extends ModularizationElementImpl implements Modu
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.MODULE_PACKAGE__MODULARIZATION_ELEMENTS:

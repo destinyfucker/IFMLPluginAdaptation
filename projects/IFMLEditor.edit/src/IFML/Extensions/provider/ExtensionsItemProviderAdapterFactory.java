@@ -486,6 +486,305 @@ public class ExtensionsItemProviderAdapterFactory extends ExtensionsAdapterFacto
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.Screen} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ScreenItemProvider screenItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.Screen}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createScreenAdapter() {
+		if (screenItemProvider == null) {
+			screenItemProvider = new ScreenItemProvider(this);
+		}
+
+		return screenItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.ToolBar} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ToolBarItemProvider toolBarItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.ToolBar}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createToolBarAdapter() {
+		if (toolBarItemProvider == null) {
+			toolBarItemProvider = new ToolBarItemProvider(this);
+		}
+
+		return toolBarItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.MobileComponent} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MobileComponentItemProvider mobileComponentItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.MobileComponent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMobileComponentAdapter() {
+		if (mobileComponentItemProvider == null) {
+			mobileComponentItemProvider = new MobileComponentItemProvider(this);
+		}
+
+		return mobileComponentItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.MobileElementEvent} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MobileElementEventItemProvider mobileElementEventItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.MobileElementEvent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMobileElementEventAdapter() {
+		if (mobileElementEventItemProvider == null) {
+			mobileElementEventItemProvider = new MobileElementEventItemProvider(this);
+		}
+
+		return mobileElementEventItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.MobileSystemEvent} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MobileSystemEventItemProvider mobileSystemEventItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.MobileSystemEvent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMobileSystemEventAdapter() {
+		if (mobileSystemEventItemProvider == null) {
+			mobileSystemEventItemProvider = new MobileSystemEventItemProvider(this);
+		}
+
+		return mobileSystemEventItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.BatteryEvent} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected BatteryEventItemProvider batteryEventItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.BatteryEvent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createBatteryEventAdapter() {
+		if (batteryEventItemProvider == null) {
+			batteryEventItemProvider = new BatteryEventItemProvider(this);
+		}
+
+		return batteryEventItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.StorageEvent} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected StorageEventItemProvider storageEventItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.StorageEvent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createStorageEventAdapter() {
+		if (storageEventItemProvider == null) {
+			storageEventItemProvider = new StorageEventItemProvider(this);
+		}
+
+		return storageEventItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.MobileAction} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MobileActionItemProvider mobileActionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.MobileAction}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMobileActionAdapter() {
+		if (mobileActionItemProvider == null) {
+			mobileActionItemProvider = new MobileActionItemProvider(this);
+		}
+
+		return mobileActionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.CameraAction} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CameraActionItemProvider cameraActionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.CameraAction}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCameraActionAdapter() {
+		if (cameraActionItemProvider == null) {
+			cameraActionItemProvider = new CameraActionItemProvider(this);
+		}
+
+		return cameraActionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.MicrophoneAction} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MicrophoneActionItemProvider microphoneActionItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.MicrophoneAction}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMicrophoneActionAdapter() {
+		if (microphoneActionItemProvider == null) {
+			microphoneActionItemProvider = new MicrophoneActionItemProvider(this);
+		}
+
+		return microphoneActionItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.MobileActionEvent} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MobileActionEventItemProvider mobileActionEventItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.MobileActionEvent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMobileActionEventAdapter() {
+		if (mobileActionEventItemProvider == null) {
+			mobileActionEventItemProvider = new MobileActionEventItemProvider(this);
+		}
+
+		return mobileActionEventItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.CameraActionEvent} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected CameraActionEventItemProvider cameraActionEventItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.CameraActionEvent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createCameraActionEventAdapter() {
+		if (cameraActionEventItemProvider == null) {
+			cameraActionEventItemProvider = new CameraActionEventItemProvider(this);
+		}
+
+		return cameraActionEventItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link IFML.Extensions.MicrophoneActionEvent} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected MicrophoneActionEventItemProvider microphoneActionEventItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link IFML.Extensions.MicrophoneActionEvent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createMicrophoneActionEventAdapter() {
+		if (microphoneActionEventItemProvider == null) {
+			microphoneActionEventItemProvider = new MicrophoneActionEventItemProvider(this);
+		}
+
+		return microphoneActionEventItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -602,6 +901,19 @@ public class ExtensionsItemProviderAdapterFactory extends ExtensionsAdapterFacto
 		if (jumpEventItemProvider != null) jumpEventItemProvider.dispose();
 		if (landingEventItemProvider != null) landingEventItemProvider.dispose();
 		if (setContextEventItemProvider != null) setContextEventItemProvider.dispose();
+		if (screenItemProvider != null) screenItemProvider.dispose();
+		if (toolBarItemProvider != null) toolBarItemProvider.dispose();
+		if (mobileComponentItemProvider != null) mobileComponentItemProvider.dispose();
+		if (mobileElementEventItemProvider != null) mobileElementEventItemProvider.dispose();
+		if (mobileSystemEventItemProvider != null) mobileSystemEventItemProvider.dispose();
+		if (batteryEventItemProvider != null) batteryEventItemProvider.dispose();
+		if (storageEventItemProvider != null) storageEventItemProvider.dispose();
+		if (mobileActionItemProvider != null) mobileActionItemProvider.dispose();
+		if (cameraActionItemProvider != null) cameraActionItemProvider.dispose();
+		if (microphoneActionItemProvider != null) microphoneActionItemProvider.dispose();
+		if (mobileActionEventItemProvider != null) mobileActionEventItemProvider.dispose();
+		if (cameraActionEventItemProvider != null) cameraActionEventItemProvider.dispose();
+		if (microphoneActionEventItemProvider != null) microphoneActionEventItemProvider.dispose();
 	}
 
 }

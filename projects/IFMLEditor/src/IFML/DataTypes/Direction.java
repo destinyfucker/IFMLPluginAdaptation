@@ -5,6 +5,7 @@ package IFML.DataTypes;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
@@ -16,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model
  * @generated
  */
-public enum Direction implements Enumerator
-{
+public enum Direction implements Enumerator {
 	/**
 	 * The '<em><b>In</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -27,6 +27,7 @@ public enum Direction implements Enumerator
 	 * @ordered
 	 */
 	IN(0, "in", "in"),
+
 	/**
 	 * The '<em><b>Out</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -36,6 +37,7 @@ public enum Direction implements Enumerator
 	 * @ordered
 	 */
 	OUT(0, "out", "out"),
+
 	/**
 	 * The '<em><b>Inout</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -45,6 +47,7 @@ public enum Direction implements Enumerator
 	 * @ordered
 	 */
 	INOUT(0, "inout", "inout");
+
 	/**
 	 * The '<em><b>In</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -232,4 +235,5 @@ public enum Direction implements Enumerator
 	public String toString() {
 		return literal;
 	}
-}
+	
+} //Direction

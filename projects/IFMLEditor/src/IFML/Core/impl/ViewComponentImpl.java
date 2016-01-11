@@ -107,7 +107,7 @@ public class ViewComponentImpl extends ViewElementImpl implements ViewComponent 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.VIEW_COMPONENT__VIEW_COMPONENT_PARTS:

@@ -7,7 +7,7 @@ import IFML.Core.CoreFactory;
 import IFML.Core.CorePackage;
 import IFML.Core.IFMLAction;
 
-import IFML.Mobile.MobileFactory;
+import IFML.Extensions.ExtensionsFactory;
 
 import java.util.Collection;
 import java.util.List;
@@ -170,17 +170,17 @@ public class IFMLActionItemProvider extends InteractionFlowElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.IFML_ACTION__ACTION_EVENTS,
-				 MobileFactory.eINSTANCE.createMobileActionEvent()));
+				 ExtensionsFactory.eINSTANCE.createMobileActionEvent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.IFML_ACTION__ACTION_EVENTS,
-				 MobileFactory.eINSTANCE.createCameraActionEvent()));
+				 ExtensionsFactory.eINSTANCE.createCameraActionEvent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.IFML_ACTION__ACTION_EVENTS,
-				 MobileFactory.eINSTANCE.createMicrophoneActionEvent()));
+				 ExtensionsFactory.eINSTANCE.createMicrophoneActionEvent()));
 	}
 
 }

@@ -71,7 +71,7 @@ public interface ViewComponentPart extends InteractionFlowElement {
 	 * It is bidirectional and its opposite is '{@link IFML.Core.ViewComponentPart#getSubViewComponentParts <em>Sub View Component Parts</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Parent View Component Part</em>' reference isn't clear,
+	 * If the meaning of the '<em>Parent View Component Part</em>' container reference isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

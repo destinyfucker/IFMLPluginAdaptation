@@ -9,8 +9,6 @@ import IFML.Core.CorePackage;
 
 import IFML.Extensions.ExtensionsFactory;
 
-import IFML.Mobile.MobileFactory;
-
 import java.util.Collection;
 import java.util.List;
 
@@ -268,7 +266,7 @@ public class ConditionalExpressionItemProvider extends ExpressionItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.VIEW_COMPONENT_PART__VIEW_ELEMENT_EVENTS,
-				 MobileFactory.eINSTANCE.createMobileElementEvent()));
+				 ExtensionsFactory.eINSTANCE.createMobileElementEvent()));
 
 		newChildDescriptors.add
 			(createChildParameter

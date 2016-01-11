@@ -74,6 +74,19 @@ public class ExtensionsFactoryImpl extends EFactoryImpl implements ExtensionsFac
 			case ExtensionsPackage.JUMP_EVENT: return createJumpEvent();
 			case ExtensionsPackage.LANDING_EVENT: return createLandingEvent();
 			case ExtensionsPackage.SET_CONTEXT_EVENT: return createSetContextEvent();
+			case ExtensionsPackage.SCREEN: return createScreen();
+			case ExtensionsPackage.TOOL_BAR: return createToolBar();
+			case ExtensionsPackage.MOBILE_COMPONENT: return createMobileComponent();
+			case ExtensionsPackage.MOBILE_ELEMENT_EVENT: return createMobileElementEvent();
+			case ExtensionsPackage.MOBILE_SYSTEM_EVENT: return createMobileSystemEvent();
+			case ExtensionsPackage.BATTERY_EVENT: return createBatteryEvent();
+			case ExtensionsPackage.STORAGE_EVENT: return createStorageEvent();
+			case ExtensionsPackage.MOBILE_ACTION: return createMobileAction();
+			case ExtensionsPackage.CAMERA_ACTION: return createCameraAction();
+			case ExtensionsPackage.MICROPHONE_ACTION: return createMicrophoneAction();
+			case ExtensionsPackage.MOBILE_ACTION_EVENT: return createMobileActionEvent();
+			case ExtensionsPackage.CAMERA_ACTION_EVENT: return createCameraActionEvent();
+			case ExtensionsPackage.MICROPHONE_ACTION_EVENT: return createMicrophoneActionEvent();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -257,6 +270,136 @@ public class ExtensionsFactoryImpl extends EFactoryImpl implements ExtensionsFac
 	public SetContextEvent createSetContextEvent() {
 		SetContextEventImpl setContextEvent = new SetContextEventImpl();
 		return setContextEvent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Screen createScreen() {
+		ScreenImpl screen = new ScreenImpl();
+		return screen;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ToolBar createToolBar() {
+		ToolBarImpl toolBar = new ToolBarImpl();
+		return toolBar;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MobileComponent createMobileComponent() {
+		MobileComponentImpl mobileComponent = new MobileComponentImpl();
+		return mobileComponent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MobileElementEvent createMobileElementEvent() {
+		MobileElementEventImpl mobileElementEvent = new MobileElementEventImpl();
+		return mobileElementEvent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MobileSystemEvent createMobileSystemEvent() {
+		MobileSystemEventImpl mobileSystemEvent = new MobileSystemEventImpl();
+		return mobileSystemEvent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BatteryEvent createBatteryEvent() {
+		BatteryEventImpl batteryEvent = new BatteryEventImpl();
+		return batteryEvent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StorageEvent createStorageEvent() {
+		StorageEventImpl storageEvent = new StorageEventImpl();
+		return storageEvent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MobileAction createMobileAction() {
+		MobileActionImpl mobileAction = new MobileActionImpl();
+		return mobileAction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CameraAction createCameraAction() {
+		CameraActionImpl cameraAction = new CameraActionImpl();
+		return cameraAction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MicrophoneAction createMicrophoneAction() {
+		MicrophoneActionImpl microphoneAction = new MicrophoneActionImpl();
+		return microphoneAction;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MobileActionEvent createMobileActionEvent() {
+		MobileActionEventImpl mobileActionEvent = new MobileActionEventImpl();
+		return mobileActionEvent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CameraActionEvent createCameraActionEvent() {
+		CameraActionEventImpl cameraActionEvent = new CameraActionEventImpl();
+		return cameraActionEvent;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MicrophoneActionEvent createMicrophoneActionEvent() {
+		MicrophoneActionEventImpl microphoneActionEvent = new MicrophoneActionEventImpl();
+		return microphoneActionEvent;
 	}
 
 	/**

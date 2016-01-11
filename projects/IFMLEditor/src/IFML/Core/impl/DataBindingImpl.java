@@ -203,7 +203,7 @@ public class DataBindingImpl extends ContentBindingImpl implements DataBinding {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CorePackage.DATA_BINDING__DATA_CONTEXT_VARIABLES:
@@ -263,7 +263,7 @@ public class DataBindingImpl extends ContentBindingImpl implements DataBinding {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.DATA_BINDING__CONDITIONAL_EXPRESSION:

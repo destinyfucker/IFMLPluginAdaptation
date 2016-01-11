@@ -228,7 +228,7 @@ public class IFMLModelImpl extends NamedElementImpl implements IFMLModel {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.IFML_MODEL__INTERACTION_FLOW_MODEL:

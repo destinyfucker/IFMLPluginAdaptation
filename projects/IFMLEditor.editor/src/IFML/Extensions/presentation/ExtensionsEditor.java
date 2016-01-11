@@ -160,8 +160,6 @@ import IFML.Core.provider.CoreItemProviderAdapterFactory;
 
 import IFML.DataTypes.presentation.IFMLMetamodelEditorPlugin;
 
-import IFML.Mobile.provider.MobileItemProviderAdapterFactory;
-
 import org.eclipse.emf.ecore.provider.EcoreItemProviderAdapterFactory;
 
 import org.eclipse.ui.actions.WorkspaceModifyOperation;
@@ -713,7 +711,6 @@ public class ExtensionsEditor
 		adapterFactory.addAdapterFactory(new ResourceItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new CoreItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ExtensionsItemProviderAdapterFactory());
-		adapterFactory.addAdapterFactory(new MobileItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new EcoreItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new UMLItemProviderAdapterFactory());
 		adapterFactory.addAdapterFactory(new ReflectiveItemProviderAdapterFactory());

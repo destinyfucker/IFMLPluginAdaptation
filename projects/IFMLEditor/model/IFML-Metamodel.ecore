@@ -180,7 +180,7 @@
           lowerBound="1" eType="#//DataTypes/Direction" defaultValueLiteral="in"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="defaultValue" ordered="false"
           eType="#//Core/Expression"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Type"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="type" eType="ecore:EClass UML.ecore#//Type"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="DataBinding" eSuperTypes="#//Core/ContentBinding">
       <eStructuralFeatures xsi:type="ecore:EReference" name="conditionalExpression"
@@ -272,19 +272,19 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="UMLBehavior" eSuperTypes="#//Core/BehaviorConcept">
       <eStructuralFeatures xsi:type="ecore:EReference" name="behavior" ordered="false"
-          eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Behavior"/>
+          eType="ecore:EClass UML.ecore#//Behavior"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="UMLBehavioralFeature" eSuperTypes="#//Core/BehavioralFeatureConcept">
       <eStructuralFeatures xsi:type="ecore:EReference" name="behavioralFeature" ordered="false"
-          eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//BehavioralFeature"/>
+          eType="ecore:EClass UML.ecore#//BehavioralFeature"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="UMLDomainConcept" eSuperTypes="#//Core/DomainConcept">
       <eStructuralFeatures xsi:type="ecore:EReference" name="classifier" ordered="false"
-          eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//Classifier"/>
+          eType="ecore:EClass UML.ecore#//Classifier"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="UMLStructuralFeature" eSuperTypes="#//Core/FeatureConcept">
       <eStructuralFeatures xsi:type="ecore:EReference" name="structuralFeature" ordered="false"
-          eType="ecore:EClass ../../org.eclipse.uml2.uml/model/UML.ecore#//StructuralFeature"/>
+          eType="ecore:EClass UML.ecore#//StructuralFeature"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ActivityConcept" eSuperTypes="#//Core/NamedElement">
       <eStructuralFeatures xsi:type="ecore:EReference" name="moduleDefinition" ordered="false"
@@ -329,20 +329,18 @@
           upperBound="-1" eType="#//Extensions/JumpEvent" eOpposite="#//Extensions/JumpEvent/landingEvent"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="SetContextEvent" eSuperTypes="#//Core/ThrowingEvent"/>
-  </eSubpackages>
-  <eSubpackages name="Mobile" nsURI="http://www.omg.org/spec/20130218/mobile" nsPrefix="mobile">
     <eClassifiers xsi:type="ecore:EClass" name="Screen" eSuperTypes="#//Core/ViewContainer"/>
     <eClassifiers xsi:type="ecore:EClass" name="ToolBar" eSuperTypes="#//Core/ViewContainer"/>
     <eClassifiers xsi:type="ecore:EClass" name="MobileComponent" eSuperTypes="#//Core/ViewComponent"/>
     <eClassifiers xsi:type="ecore:EClass" name="MobileElementEvent" eSuperTypes="#//Core/ViewElementEvent"/>
     <eClassifiers xsi:type="ecore:EClass" name="MobileSystemEvent" eSuperTypes="#//Core/SystemEvent"/>
-    <eClassifiers xsi:type="ecore:EClass" name="BatteryEvent" eSuperTypes="#//Mobile/MobileSystemEvent"/>
-    <eClassifiers xsi:type="ecore:EClass" name="StorageEvent" eSuperTypes="#//Mobile/MobileSystemEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="BatteryEvent" eSuperTypes="#//Extensions/MobileSystemEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="StorageEvent" eSuperTypes="#//Extensions/MobileSystemEvent"/>
     <eClassifiers xsi:type="ecore:EClass" name="MobileAction" eSuperTypes="#//Core/IFMLAction"/>
-    <eClassifiers xsi:type="ecore:EClass" name="CameraAction" eSuperTypes="#//Mobile/MobileAction"/>
-    <eClassifiers xsi:type="ecore:EClass" name="MicrophoneAction" eSuperTypes="#//Mobile/MobileAction"/>
+    <eClassifiers xsi:type="ecore:EClass" name="CameraAction" eSuperTypes="#//Extensions/MobileAction"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MicrophoneAction" eSuperTypes="#//Extensions/MobileAction"/>
     <eClassifiers xsi:type="ecore:EClass" name="MobileActionEvent" eSuperTypes="#//Core/ActionEvent"/>
-    <eClassifiers xsi:type="ecore:EClass" name="CameraActionEvent" eSuperTypes="#//Mobile/MobileActionEvent"/>
-    <eClassifiers xsi:type="ecore:EClass" name="MicrophoneActionEvent" eSuperTypes="#//Mobile/MobileActionEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="CameraActionEvent" eSuperTypes="#//Extensions/MobileActionEvent"/>
+    <eClassifiers xsi:type="ecore:EClass" name="MicrophoneActionEvent" eSuperTypes="#//Extensions/MobileActionEvent"/>
   </eSubpackages>
 </ecore:EPackage>

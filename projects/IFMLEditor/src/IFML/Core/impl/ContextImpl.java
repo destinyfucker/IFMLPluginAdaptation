@@ -104,7 +104,7 @@ public class ContextImpl extends ElementImpl implements Context {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CorePackage.CONTEXT__CONTEXT_VARIABLES:
@@ -151,7 +151,7 @@ public class ContextImpl extends ElementImpl implements Context {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.CONTEXT__CONTEXT_DIMENSIONS:

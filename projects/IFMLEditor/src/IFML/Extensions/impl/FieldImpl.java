@@ -5,14 +5,21 @@ package IFML.Extensions.impl;
 import IFML.Core.CorePackage;
 import IFML.Core.Expression;
 import IFML.Core.IFMLParameter;
+
 import IFML.Core.impl.ViewComponentPartImpl;
+
 import IFML.DataTypes.Direction;
+
 import IFML.Extensions.ExtensionsPackage;
 import IFML.Extensions.Field;
+
 import org.eclipse.emf.common.notify.Notification;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
+
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
 import org.eclipse.uml2.uml.Type;
 
 /**
@@ -212,7 +219,6 @@ public abstract class FieldImpl extends ViewComponentPartImpl implements Field {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {

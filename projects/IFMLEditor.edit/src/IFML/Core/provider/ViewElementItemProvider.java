@@ -9,8 +9,6 @@ import IFML.Core.ViewElement;
 
 import IFML.Extensions.ExtensionsFactory;
 
-import IFML.Mobile.MobileFactory;
-
 import java.util.Collection;
 import java.util.List;
 
@@ -182,7 +180,7 @@ public class ViewElementItemProvider extends InteractionFlowElementItemProvider 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.VIEW_ELEMENT__VIEW_ELEMENT_EVENTS,
-				 MobileFactory.eINSTANCE.createMobileElementEvent()));
+				 ExtensionsFactory.eINSTANCE.createMobileElementEvent()));
 	}
 
 }

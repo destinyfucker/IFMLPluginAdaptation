@@ -2,6 +2,7 @@
  */
 package IFML.Extensions.util;
 
+import IFML.Core.ActionEvent;
 import IFML.Core.BooleanExpression;
 import IFML.Core.CatchingEvent;
 import IFML.Core.Constraint;
@@ -9,6 +10,7 @@ import IFML.Core.ContextDimension;
 import IFML.Core.Element;
 import IFML.Core.Event;
 import IFML.Core.Expression;
+import IFML.Core.IFMLAction;
 import IFML.Core.IFMLParameter;
 import IFML.Core.InteractionFlowElement;
 import IFML.Core.InteractionFlowModelElement;
@@ -20,10 +22,14 @@ import IFML.Core.ViewComponentPart;
 import IFML.Core.ViewContainer;
 import IFML.Core.ViewElement;
 import IFML.Core.ViewElementEvent;
+
 import IFML.Extensions.*;
+
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
+
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -159,6 +165,58 @@ public class ExtensionsAdapterFactory extends AdapterFactoryImpl {
 				return createSetContextEventAdapter();
 			}
 			@Override
+			public Adapter caseScreen(Screen object) {
+				return createScreenAdapter();
+			}
+			@Override
+			public Adapter caseToolBar(ToolBar object) {
+				return createToolBarAdapter();
+			}
+			@Override
+			public Adapter caseMobileComponent(MobileComponent object) {
+				return createMobileComponentAdapter();
+			}
+			@Override
+			public Adapter caseMobileElementEvent(MobileElementEvent object) {
+				return createMobileElementEventAdapter();
+			}
+			@Override
+			public Adapter caseMobileSystemEvent(MobileSystemEvent object) {
+				return createMobileSystemEventAdapter();
+			}
+			@Override
+			public Adapter caseBatteryEvent(BatteryEvent object) {
+				return createBatteryEventAdapter();
+			}
+			@Override
+			public Adapter caseStorageEvent(StorageEvent object) {
+				return createStorageEventAdapter();
+			}
+			@Override
+			public Adapter caseMobileAction(MobileAction object) {
+				return createMobileActionAdapter();
+			}
+			@Override
+			public Adapter caseCameraAction(CameraAction object) {
+				return createCameraActionAdapter();
+			}
+			@Override
+			public Adapter caseMicrophoneAction(MicrophoneAction object) {
+				return createMicrophoneActionAdapter();
+			}
+			@Override
+			public Adapter caseMobileActionEvent(MobileActionEvent object) {
+				return createMobileActionEventAdapter();
+			}
+			@Override
+			public Adapter caseCameraActionEvent(CameraActionEvent object) {
+				return createCameraActionEventAdapter();
+			}
+			@Override
+			public Adapter caseMicrophoneActionEvent(MicrophoneActionEvent object) {
+				return createMicrophoneActionEventAdapter();
+			}
+			@Override
 			public Adapter caseElement(Element object) {
 				return createElementAdapter();
 			}
@@ -229,6 +287,14 @@ public class ExtensionsAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseThrowingEvent(ThrowingEvent object) {
 				return createThrowingEventAdapter();
+			}
+			@Override
+			public Adapter caseIFMLAction(IFMLAction object) {
+				return createIFMLActionAdapter();
+			}
+			@Override
+			public Adapter caseActionEvent(ActionEvent object) {
+				return createActionEventAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -517,6 +583,188 @@ public class ExtensionsAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.Screen <em>Screen</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.Screen
+	 * @generated
+	 */
+	public Adapter createScreenAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.ToolBar <em>Tool Bar</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.ToolBar
+	 * @generated
+	 */
+	public Adapter createToolBarAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.MobileComponent <em>Mobile Component</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.MobileComponent
+	 * @generated
+	 */
+	public Adapter createMobileComponentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.MobileElementEvent <em>Mobile Element Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.MobileElementEvent
+	 * @generated
+	 */
+	public Adapter createMobileElementEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.MobileSystemEvent <em>Mobile System Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.MobileSystemEvent
+	 * @generated
+	 */
+	public Adapter createMobileSystemEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.BatteryEvent <em>Battery Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.BatteryEvent
+	 * @generated
+	 */
+	public Adapter createBatteryEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.StorageEvent <em>Storage Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.StorageEvent
+	 * @generated
+	 */
+	public Adapter createStorageEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.MobileAction <em>Mobile Action</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.MobileAction
+	 * @generated
+	 */
+	public Adapter createMobileActionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.CameraAction <em>Camera Action</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.CameraAction
+	 * @generated
+	 */
+	public Adapter createCameraActionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.MicrophoneAction <em>Microphone Action</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.MicrophoneAction
+	 * @generated
+	 */
+	public Adapter createMicrophoneActionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.MobileActionEvent <em>Mobile Action Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.MobileActionEvent
+	 * @generated
+	 */
+	public Adapter createMobileActionEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.CameraActionEvent <em>Camera Action Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.CameraActionEvent
+	 * @generated
+	 */
+	public Adapter createCameraActionEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Extensions.MicrophoneActionEvent <em>Microphone Action Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Extensions.MicrophoneActionEvent
+	 * @generated
+	 */
+	public Adapter createMicrophoneActionEventAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link IFML.Core.Element <em>Element</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -765,6 +1013,34 @@ public class ExtensionsAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createThrowingEventAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Core.IFMLAction <em>IFML Action</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Core.IFMLAction
+	 * @generated
+	 */
+	public Adapter createIFMLActionAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link IFML.Core.ActionEvent <em>Action Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see IFML.Core.ActionEvent
+	 * @generated
+	 */
+	public Adapter createActionEventAdapter() {
 		return null;
 	}
 

@@ -9,8 +9,6 @@ import IFML.Core.ViewContainer;
 
 import IFML.Extensions.ExtensionsFactory;
 
-import IFML.Mobile.MobileFactory;
-
 import java.util.Collection;
 import java.util.List;
 
@@ -261,17 +259,17 @@ public class ViewContainerItemProvider extends ViewElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.VIEW_CONTAINER__VIEW_ELEMENTS,
-				 MobileFactory.eINSTANCE.createScreen()));
+				 ExtensionsFactory.eINSTANCE.createScreen()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.VIEW_CONTAINER__VIEW_ELEMENTS,
-				 MobileFactory.eINSTANCE.createToolBar()));
+				 ExtensionsFactory.eINSTANCE.createToolBar()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.VIEW_CONTAINER__VIEW_ELEMENTS,
-				 MobileFactory.eINSTANCE.createMobileComponent()));
+				 ExtensionsFactory.eINSTANCE.createMobileComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -281,17 +279,17 @@ public class ViewContainerItemProvider extends ViewElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.VIEW_CONTAINER__ACTIONS,
-				 MobileFactory.eINSTANCE.createMobileAction()));
+				 ExtensionsFactory.eINSTANCE.createMobileAction()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.VIEW_CONTAINER__ACTIONS,
-				 MobileFactory.eINSTANCE.createCameraAction()));
+				 ExtensionsFactory.eINSTANCE.createCameraAction()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.VIEW_CONTAINER__ACTIONS,
-				 MobileFactory.eINSTANCE.createMicrophoneAction()));
+				 ExtensionsFactory.eINSTANCE.createMicrophoneAction()));
 	}
 
 }

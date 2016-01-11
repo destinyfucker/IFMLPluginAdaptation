@@ -147,7 +147,7 @@ public class ViewpointImpl extends NamedElementImpl implements Viewpoint {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.VIEWPOINT__INTERACTION_FLOW_MODEL_ELEMENTS:

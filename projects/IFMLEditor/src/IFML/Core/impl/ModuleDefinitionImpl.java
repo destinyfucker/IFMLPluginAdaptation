@@ -226,7 +226,7 @@ public class ModuleDefinitionImpl extends ModularizationElementImpl implements M
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CorePackage.MODULE_DEFINITION__MODULES:
@@ -290,7 +290,7 @@ public class ModuleDefinitionImpl extends ModularizationElementImpl implements M
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.MODULE_DEFINITION__INPUT_PORTS:

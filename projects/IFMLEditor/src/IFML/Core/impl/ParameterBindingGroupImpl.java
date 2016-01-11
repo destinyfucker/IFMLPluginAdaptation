@@ -107,7 +107,7 @@ public class ParameterBindingGroupImpl extends InteractionFlowModelElementImpl i
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.PARAMETER_BINDING_GROUP__PARAMETER_BINDINGS:

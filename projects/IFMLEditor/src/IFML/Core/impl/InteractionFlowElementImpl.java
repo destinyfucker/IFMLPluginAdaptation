@@ -128,7 +128,7 @@ public abstract class InteractionFlowElementImpl extends NamedElementImpl implem
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CorePackage.INTERACTION_FLOW_ELEMENT__OUT_INTERACTION_FLOWS:
@@ -181,7 +181,7 @@ public abstract class InteractionFlowElementImpl extends NamedElementImpl implem
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.INTERACTION_FLOW_ELEMENT__PARAMETERS:

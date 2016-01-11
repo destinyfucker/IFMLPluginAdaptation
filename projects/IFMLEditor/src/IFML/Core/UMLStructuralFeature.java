@@ -4,7 +4,6 @@ package IFML.Core;
 
 import org.eclipse.uml2.uml.StructuralFeature;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>UML Structural Feature</b></em>'.

@@ -9,8 +9,6 @@ import IFML.Core.ModuleDefinition;
 
 import IFML.Extensions.ExtensionsFactory;
 
-import IFML.Mobile.MobileFactory;
-
 import java.util.Collection;
 import java.util.List;
 
@@ -429,67 +427,67 @@ public class ModuleDefinitionItemProvider extends ModularizationElementItemProvi
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createScreen()));
+				 ExtensionsFactory.eINSTANCE.createScreen()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createToolBar()));
+				 ExtensionsFactory.eINSTANCE.createToolBar()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createMobileComponent()));
+				 ExtensionsFactory.eINSTANCE.createMobileComponent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createMobileElementEvent()));
+				 ExtensionsFactory.eINSTANCE.createMobileElementEvent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createMobileSystemEvent()));
+				 ExtensionsFactory.eINSTANCE.createMobileSystemEvent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createBatteryEvent()));
+				 ExtensionsFactory.eINSTANCE.createBatteryEvent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createStorageEvent()));
+				 ExtensionsFactory.eINSTANCE.createStorageEvent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createMobileAction()));
+				 ExtensionsFactory.eINSTANCE.createMobileAction()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createCameraAction()));
+				 ExtensionsFactory.eINSTANCE.createCameraAction()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createMicrophoneAction()));
+				 ExtensionsFactory.eINSTANCE.createMicrophoneAction()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createMobileActionEvent()));
+				 ExtensionsFactory.eINSTANCE.createMobileActionEvent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createCameraActionEvent()));
+				 ExtensionsFactory.eINSTANCE.createCameraActionEvent()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(CorePackage.Literals.MODULE_DEFINITION__INTERACTION_FLOW_MODEL_ELEMENT,
-				 MobileFactory.eINSTANCE.createMicrophoneActionEvent()));
+				 ExtensionsFactory.eINSTANCE.createMicrophoneActionEvent()));
 	}
 
 	/**

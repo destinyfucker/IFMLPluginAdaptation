@@ -71,14 +71,13 @@ import IFML.Extensions.ExtensionsPackage;
 
 import IFML.Extensions.impl.ExtensionsPackageImpl;
 
-import IFML.Mobile.MobilePackage;
-import IFML.Mobile.impl.MobilePackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
+
 import org.eclipse.uml2.uml.UMLPackage;
 
 /**
@@ -546,19 +545,16 @@ public class CorePackageImpl extends EPackageImpl implements CorePackage {
 		// Obtain or create and register interdependencies
 		DataTypesPackageImpl theDataTypesPackage = (DataTypesPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(DataTypesPackage.eNS_URI) instanceof DataTypesPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(DataTypesPackage.eNS_URI) : DataTypesPackage.eINSTANCE);
 		ExtensionsPackageImpl theExtensionsPackage = (ExtensionsPackageImpl)(EPackage.Registry.INSTANCE.getEPackage(ExtensionsPackage.eNS_URI) instanceof ExtensionsPackageImpl ? EPackage.Registry.INSTANCE.getEPackage(ExtensionsPackage.eNS_URI) : ExtensionsPackage.eINSTANCE);
-		MobilePackageImpl theMobilePackage = (MobilePackageImpl)(EPackage.Registry.INSTANCE.getEPackage(MobilePackage.eNS_URI) instanceof MobilePackageImpl ? EPackage.Registry.INSTANCE.getEPackage(MobilePackage.eNS_URI) : MobilePackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theCorePackage.createPackageContents();
 		theDataTypesPackage.createPackageContents();
 		theExtensionsPackage.createPackageContents();
-		theMobilePackage.createPackageContents();
 
 		// Initialize created meta-data
 		theCorePackage.initializePackageContents();
 		theDataTypesPackage.initializePackageContents();
 		theExtensionsPackage.initializePackageContents();
-		theMobilePackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theCorePackage.freeze();

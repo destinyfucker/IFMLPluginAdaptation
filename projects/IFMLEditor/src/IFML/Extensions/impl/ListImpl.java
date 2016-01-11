@@ -109,7 +109,7 @@ public class ListImpl extends ViewComponentImpl implements List {
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case ExtensionsPackage.LIST__SELECT_EVENT:

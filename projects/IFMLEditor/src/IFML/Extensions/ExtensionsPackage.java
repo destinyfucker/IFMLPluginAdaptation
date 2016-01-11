@@ -16,6 +16,7 @@ import org.eclipse.emf.ecore.EReference;
  * <ul>
  *   <li>each class,</li>
  *   <li>each feature of each class,</li>
+ *   <li>each operation of each class,</li>
  *   <li>each enum,</li>
  *   <li>and each data type</li>
  * </ul>
@@ -2380,7 +2381,6 @@ public interface ExtensionsPackage extends EPackage {
 	 */
 	int SET_CONTEXT_EVENT_FEATURE_COUNT = CorePackage.THROWING_EVENT_FEATURE_COUNT + 0;
 
-
 	/**
 	 * The number of operations of the '<em>Set Context Event</em>' class.
 	 * <!-- begin-user-doc -->
@@ -2389,6 +2389,1640 @@ public interface ExtensionsPackage extends EPackage {
 	 * @ordered
 	 */
 	int SET_CONTEXT_EVENT_OPERATION_COUNT = CorePackage.THROWING_EVENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.ScreenImpl <em>Screen</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.ScreenImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getScreen()
+	 * @generated
+	 */
+	int SCREEN = 19;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__ID = CorePackage.VIEW_CONTAINER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__CONSTRAINTS = CorePackage.VIEW_CONTAINER__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__ANNOTATIONS = CorePackage.VIEW_CONTAINER__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__NAME = CorePackage.VIEW_CONTAINER__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__PARAMETERS = CorePackage.VIEW_CONTAINER__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__OUT_INTERACTION_FLOWS = CorePackage.VIEW_CONTAINER__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__IN_INTERACTION_FLOWS = CorePackage.VIEW_CONTAINER__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>View Element Events</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__VIEW_ELEMENT_EVENTS = CorePackage.VIEW_CONTAINER__VIEW_ELEMENT_EVENTS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__ACTIVATION_EXPRESSION = CorePackage.VIEW_CONTAINER__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>View Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__VIEW_CONTAINER = CorePackage.VIEW_CONTAINER__VIEW_CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Is Landmark</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__IS_LANDMARK = CorePackage.VIEW_CONTAINER__IS_LANDMARK;
+
+	/**
+	 * The feature id for the '<em><b>Is Default</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__IS_DEFAULT = CorePackage.VIEW_CONTAINER__IS_DEFAULT;
+
+	/**
+	 * The feature id for the '<em><b>Is XOR</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__IS_XOR = CorePackage.VIEW_CONTAINER__IS_XOR;
+
+	/**
+	 * The feature id for the '<em><b>View Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__VIEW_ELEMENTS = CorePackage.VIEW_CONTAINER__VIEW_ELEMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Actions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN__ACTIONS = CorePackage.VIEW_CONTAINER__ACTIONS;
+
+	/**
+	 * The number of structural features of the '<em>Screen</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN_FEATURE_COUNT = CorePackage.VIEW_CONTAINER_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Screen</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCREEN_OPERATION_COUNT = CorePackage.VIEW_CONTAINER_OPERATION_COUNT + 0;
+
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.ToolBarImpl <em>Tool Bar</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.ToolBarImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getToolBar()
+	 * @generated
+	 */
+	int TOOL_BAR = 20;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__ID = CorePackage.VIEW_CONTAINER__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__CONSTRAINTS = CorePackage.VIEW_CONTAINER__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__ANNOTATIONS = CorePackage.VIEW_CONTAINER__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__NAME = CorePackage.VIEW_CONTAINER__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__PARAMETERS = CorePackage.VIEW_CONTAINER__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__OUT_INTERACTION_FLOWS = CorePackage.VIEW_CONTAINER__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__IN_INTERACTION_FLOWS = CorePackage.VIEW_CONTAINER__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>View Element Events</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__VIEW_ELEMENT_EVENTS = CorePackage.VIEW_CONTAINER__VIEW_ELEMENT_EVENTS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__ACTIVATION_EXPRESSION = CorePackage.VIEW_CONTAINER__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>View Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__VIEW_CONTAINER = CorePackage.VIEW_CONTAINER__VIEW_CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>Is Landmark</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__IS_LANDMARK = CorePackage.VIEW_CONTAINER__IS_LANDMARK;
+
+	/**
+	 * The feature id for the '<em><b>Is Default</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__IS_DEFAULT = CorePackage.VIEW_CONTAINER__IS_DEFAULT;
+
+	/**
+	 * The feature id for the '<em><b>Is XOR</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__IS_XOR = CorePackage.VIEW_CONTAINER__IS_XOR;
+
+	/**
+	 * The feature id for the '<em><b>View Elements</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__VIEW_ELEMENTS = CorePackage.VIEW_CONTAINER__VIEW_ELEMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Actions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR__ACTIONS = CorePackage.VIEW_CONTAINER__ACTIONS;
+
+	/**
+	 * The number of structural features of the '<em>Tool Bar</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR_FEATURE_COUNT = CorePackage.VIEW_CONTAINER_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Tool Bar</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TOOL_BAR_OPERATION_COUNT = CorePackage.VIEW_CONTAINER_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.MobileComponentImpl <em>Mobile Component</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.MobileComponentImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMobileComponent()
+	 * @generated
+	 */
+	int MOBILE_COMPONENT = 21;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT__ID = CorePackage.VIEW_COMPONENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT__CONSTRAINTS = CorePackage.VIEW_COMPONENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT__ANNOTATIONS = CorePackage.VIEW_COMPONENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT__NAME = CorePackage.VIEW_COMPONENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT__PARAMETERS = CorePackage.VIEW_COMPONENT__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT__OUT_INTERACTION_FLOWS = CorePackage.VIEW_COMPONENT__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT__IN_INTERACTION_FLOWS = CorePackage.VIEW_COMPONENT__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>View Element Events</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT__VIEW_ELEMENT_EVENTS = CorePackage.VIEW_COMPONENT__VIEW_ELEMENT_EVENTS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT__ACTIVATION_EXPRESSION = CorePackage.VIEW_COMPONENT__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>View Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT__VIEW_CONTAINER = CorePackage.VIEW_COMPONENT__VIEW_CONTAINER;
+
+	/**
+	 * The feature id for the '<em><b>View Component Parts</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT__VIEW_COMPONENT_PARTS = CorePackage.VIEW_COMPONENT__VIEW_COMPONENT_PARTS;
+
+	/**
+	 * The number of structural features of the '<em>Mobile Component</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT_FEATURE_COUNT = CorePackage.VIEW_COMPONENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Mobile Component</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_COMPONENT_OPERATION_COUNT = CorePackage.VIEW_COMPONENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.MobileElementEventImpl <em>Mobile Element Event</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.MobileElementEventImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMobileElementEvent()
+	 * @generated
+	 */
+	int MOBILE_ELEMENT_EVENT = 22;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT__ID = CorePackage.VIEW_ELEMENT_EVENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT__CONSTRAINTS = CorePackage.VIEW_ELEMENT_EVENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT__ANNOTATIONS = CorePackage.VIEW_ELEMENT_EVENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT__NAME = CorePackage.VIEW_ELEMENT_EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT__PARAMETERS = CorePackage.VIEW_ELEMENT_EVENT__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT__OUT_INTERACTION_FLOWS = CorePackage.VIEW_ELEMENT_EVENT__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT__IN_INTERACTION_FLOWS = CorePackage.VIEW_ELEMENT_EVENT__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT__ACTIVATION_EXPRESSION = CorePackage.VIEW_ELEMENT_EVENT__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Interaction Flow Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT__INTERACTION_FLOW_EXPRESSION = CorePackage.VIEW_ELEMENT_EVENT__INTERACTION_FLOW_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>View Element</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT__VIEW_ELEMENT = CorePackage.VIEW_ELEMENT_EVENT__VIEW_ELEMENT;
+
+	/**
+	 * The number of structural features of the '<em>Mobile Element Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT_FEATURE_COUNT = CorePackage.VIEW_ELEMENT_EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Mobile Element Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ELEMENT_EVENT_OPERATION_COUNT = CorePackage.VIEW_ELEMENT_EVENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.MobileSystemEventImpl <em>Mobile System Event</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.MobileSystemEventImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMobileSystemEvent()
+	 * @generated
+	 */
+	int MOBILE_SYSTEM_EVENT = 23;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT__ID = CorePackage.SYSTEM_EVENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT__CONSTRAINTS = CorePackage.SYSTEM_EVENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT__ANNOTATIONS = CorePackage.SYSTEM_EVENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT__NAME = CorePackage.SYSTEM_EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT__PARAMETERS = CorePackage.SYSTEM_EVENT__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT__OUT_INTERACTION_FLOWS = CorePackage.SYSTEM_EVENT__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT__IN_INTERACTION_FLOWS = CorePackage.SYSTEM_EVENT__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT__ACTIVATION_EXPRESSION = CorePackage.SYSTEM_EVENT__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Interaction Flow Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT__INTERACTION_FLOW_EXPRESSION = CorePackage.SYSTEM_EVENT__INTERACTION_FLOW_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Triggering Expressions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT__TRIGGERING_EXPRESSIONS = CorePackage.SYSTEM_EVENT__TRIGGERING_EXPRESSIONS;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT__TYPE = CorePackage.SYSTEM_EVENT__TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Mobile System Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT_FEATURE_COUNT = CorePackage.SYSTEM_EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Mobile System Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_SYSTEM_EVENT_OPERATION_COUNT = CorePackage.SYSTEM_EVENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.BatteryEventImpl <em>Battery Event</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.BatteryEventImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getBatteryEvent()
+	 * @generated
+	 */
+	int BATTERY_EVENT = 24;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT__ID = MOBILE_SYSTEM_EVENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT__CONSTRAINTS = MOBILE_SYSTEM_EVENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT__ANNOTATIONS = MOBILE_SYSTEM_EVENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT__NAME = MOBILE_SYSTEM_EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT__PARAMETERS = MOBILE_SYSTEM_EVENT__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT__OUT_INTERACTION_FLOWS = MOBILE_SYSTEM_EVENT__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT__IN_INTERACTION_FLOWS = MOBILE_SYSTEM_EVENT__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT__ACTIVATION_EXPRESSION = MOBILE_SYSTEM_EVENT__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Interaction Flow Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT__INTERACTION_FLOW_EXPRESSION = MOBILE_SYSTEM_EVENT__INTERACTION_FLOW_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Triggering Expressions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT__TRIGGERING_EXPRESSIONS = MOBILE_SYSTEM_EVENT__TRIGGERING_EXPRESSIONS;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT__TYPE = MOBILE_SYSTEM_EVENT__TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Battery Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT_FEATURE_COUNT = MOBILE_SYSTEM_EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Battery Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY_EVENT_OPERATION_COUNT = MOBILE_SYSTEM_EVENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.StorageEventImpl <em>Storage Event</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.StorageEventImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getStorageEvent()
+	 * @generated
+	 */
+	int STORAGE_EVENT = 25;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT__ID = MOBILE_SYSTEM_EVENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT__CONSTRAINTS = MOBILE_SYSTEM_EVENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT__ANNOTATIONS = MOBILE_SYSTEM_EVENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT__NAME = MOBILE_SYSTEM_EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT__PARAMETERS = MOBILE_SYSTEM_EVENT__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT__OUT_INTERACTION_FLOWS = MOBILE_SYSTEM_EVENT__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT__IN_INTERACTION_FLOWS = MOBILE_SYSTEM_EVENT__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT__ACTIVATION_EXPRESSION = MOBILE_SYSTEM_EVENT__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Interaction Flow Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT__INTERACTION_FLOW_EXPRESSION = MOBILE_SYSTEM_EVENT__INTERACTION_FLOW_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Triggering Expressions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT__TRIGGERING_EXPRESSIONS = MOBILE_SYSTEM_EVENT__TRIGGERING_EXPRESSIONS;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT__TYPE = MOBILE_SYSTEM_EVENT__TYPE;
+
+	/**
+	 * The number of structural features of the '<em>Storage Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT_FEATURE_COUNT = MOBILE_SYSTEM_EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Storage Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STORAGE_EVENT_OPERATION_COUNT = MOBILE_SYSTEM_EVENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.MobileActionImpl <em>Mobile Action</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.MobileActionImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMobileAction()
+	 * @generated
+	 */
+	int MOBILE_ACTION = 26;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION__ID = CorePackage.IFML_ACTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION__CONSTRAINTS = CorePackage.IFML_ACTION__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION__ANNOTATIONS = CorePackage.IFML_ACTION__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION__NAME = CorePackage.IFML_ACTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION__PARAMETERS = CorePackage.IFML_ACTION__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION__OUT_INTERACTION_FLOWS = CorePackage.IFML_ACTION__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION__IN_INTERACTION_FLOWS = CorePackage.IFML_ACTION__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Action Events</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION__ACTION_EVENTS = CorePackage.IFML_ACTION__ACTION_EVENTS;
+
+	/**
+	 * The feature id for the '<em><b>Dynamic Behavior</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION__DYNAMIC_BEHAVIOR = CorePackage.IFML_ACTION__DYNAMIC_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>View Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION__VIEW_CONTAINER = CorePackage.IFML_ACTION__VIEW_CONTAINER;
+
+	/**
+	 * The number of structural features of the '<em>Mobile Action</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_FEATURE_COUNT = CorePackage.IFML_ACTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Mobile Action</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_OPERATION_COUNT = CorePackage.IFML_ACTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.CameraActionImpl <em>Camera Action</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.CameraActionImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getCameraAction()
+	 * @generated
+	 */
+	int CAMERA_ACTION = 27;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION__ID = MOBILE_ACTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION__CONSTRAINTS = MOBILE_ACTION__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION__ANNOTATIONS = MOBILE_ACTION__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION__NAME = MOBILE_ACTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION__PARAMETERS = MOBILE_ACTION__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION__OUT_INTERACTION_FLOWS = MOBILE_ACTION__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION__IN_INTERACTION_FLOWS = MOBILE_ACTION__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Action Events</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION__ACTION_EVENTS = MOBILE_ACTION__ACTION_EVENTS;
+
+	/**
+	 * The feature id for the '<em><b>Dynamic Behavior</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION__DYNAMIC_BEHAVIOR = MOBILE_ACTION__DYNAMIC_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>View Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION__VIEW_CONTAINER = MOBILE_ACTION__VIEW_CONTAINER;
+
+	/**
+	 * The number of structural features of the '<em>Camera Action</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_FEATURE_COUNT = MOBILE_ACTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Camera Action</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_OPERATION_COUNT = MOBILE_ACTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.MicrophoneActionImpl <em>Microphone Action</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.MicrophoneActionImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMicrophoneAction()
+	 * @generated
+	 */
+	int MICROPHONE_ACTION = 28;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION__ID = MOBILE_ACTION__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION__CONSTRAINTS = MOBILE_ACTION__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION__ANNOTATIONS = MOBILE_ACTION__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION__NAME = MOBILE_ACTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION__PARAMETERS = MOBILE_ACTION__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION__OUT_INTERACTION_FLOWS = MOBILE_ACTION__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION__IN_INTERACTION_FLOWS = MOBILE_ACTION__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Action Events</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION__ACTION_EVENTS = MOBILE_ACTION__ACTION_EVENTS;
+
+	/**
+	 * The feature id for the '<em><b>Dynamic Behavior</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION__DYNAMIC_BEHAVIOR = MOBILE_ACTION__DYNAMIC_BEHAVIOR;
+
+	/**
+	 * The feature id for the '<em><b>View Container</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION__VIEW_CONTAINER = MOBILE_ACTION__VIEW_CONTAINER;
+
+	/**
+	 * The number of structural features of the '<em>Microphone Action</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_FEATURE_COUNT = MOBILE_ACTION_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Microphone Action</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_OPERATION_COUNT = MOBILE_ACTION_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.MobileActionEventImpl <em>Mobile Action Event</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.MobileActionEventImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMobileActionEvent()
+	 * @generated
+	 */
+	int MOBILE_ACTION_EVENT = 29;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_EVENT__ID = CorePackage.ACTION_EVENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_EVENT__CONSTRAINTS = CorePackage.ACTION_EVENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_EVENT__ANNOTATIONS = CorePackage.ACTION_EVENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_EVENT__NAME = CorePackage.ACTION_EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_EVENT__PARAMETERS = CorePackage.ACTION_EVENT__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_EVENT__OUT_INTERACTION_FLOWS = CorePackage.ACTION_EVENT__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_EVENT__IN_INTERACTION_FLOWS = CorePackage.ACTION_EVENT__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_EVENT__ACTIVATION_EXPRESSION = CorePackage.ACTION_EVENT__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Interaction Flow Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_EVENT__INTERACTION_FLOW_EXPRESSION = CorePackage.ACTION_EVENT__INTERACTION_FLOW_EXPRESSION;
+
+	/**
+	 * The number of structural features of the '<em>Mobile Action Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_EVENT_FEATURE_COUNT = CorePackage.ACTION_EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Mobile Action Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOBILE_ACTION_EVENT_OPERATION_COUNT = CorePackage.ACTION_EVENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.CameraActionEventImpl <em>Camera Action Event</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.CameraActionEventImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getCameraActionEvent()
+	 * @generated
+	 */
+	int CAMERA_ACTION_EVENT = 30;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_EVENT__ID = MOBILE_ACTION_EVENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_EVENT__CONSTRAINTS = MOBILE_ACTION_EVENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_EVENT__ANNOTATIONS = MOBILE_ACTION_EVENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_EVENT__NAME = MOBILE_ACTION_EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_EVENT__PARAMETERS = MOBILE_ACTION_EVENT__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_EVENT__OUT_INTERACTION_FLOWS = MOBILE_ACTION_EVENT__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_EVENT__IN_INTERACTION_FLOWS = MOBILE_ACTION_EVENT__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_EVENT__ACTIVATION_EXPRESSION = MOBILE_ACTION_EVENT__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Interaction Flow Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_EVENT__INTERACTION_FLOW_EXPRESSION = MOBILE_ACTION_EVENT__INTERACTION_FLOW_EXPRESSION;
+
+	/**
+	 * The number of structural features of the '<em>Camera Action Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_EVENT_FEATURE_COUNT = MOBILE_ACTION_EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Camera Action Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAMERA_ACTION_EVENT_OPERATION_COUNT = MOBILE_ACTION_EVENT_OPERATION_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link IFML.Extensions.impl.MicrophoneActionEventImpl <em>Microphone Action Event</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see IFML.Extensions.impl.MicrophoneActionEventImpl
+	 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMicrophoneActionEvent()
+	 * @generated
+	 */
+	int MICROPHONE_ACTION_EVENT = 31;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_EVENT__ID = MOBILE_ACTION_EVENT__ID;
+
+	/**
+	 * The feature id for the '<em><b>Constraints</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_EVENT__CONSTRAINTS = MOBILE_ACTION_EVENT__CONSTRAINTS;
+
+	/**
+	 * The feature id for the '<em><b>Annotations</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_EVENT__ANNOTATIONS = MOBILE_ACTION_EVENT__ANNOTATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_EVENT__NAME = MOBILE_ACTION_EVENT__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parameters</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_EVENT__PARAMETERS = MOBILE_ACTION_EVENT__PARAMETERS;
+
+	/**
+	 * The feature id for the '<em><b>Out Interaction Flows</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_EVENT__OUT_INTERACTION_FLOWS = MOBILE_ACTION_EVENT__OUT_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>In Interaction Flows</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_EVENT__IN_INTERACTION_FLOWS = MOBILE_ACTION_EVENT__IN_INTERACTION_FLOWS;
+
+	/**
+	 * The feature id for the '<em><b>Activation Expression</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_EVENT__ACTIVATION_EXPRESSION = MOBILE_ACTION_EVENT__ACTIVATION_EXPRESSION;
+
+	/**
+	 * The feature id for the '<em><b>Interaction Flow Expression</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_EVENT__INTERACTION_FLOW_EXPRESSION = MOBILE_ACTION_EVENT__INTERACTION_FLOW_EXPRESSION;
+
+	/**
+	 * The number of structural features of the '<em>Microphone Action Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_EVENT_FEATURE_COUNT = MOBILE_ACTION_EVENT_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of operations of the '<em>Microphone Action Event</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROPHONE_ACTION_EVENT_OPERATION_COUNT = MOBILE_ACTION_EVENT_OPERATION_COUNT + 0;
 
 
 	/**
@@ -2648,6 +4282,136 @@ public interface ExtensionsPackage extends EPackage {
 	EClass getSetContextEvent();
 
 	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.Screen <em>Screen</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Screen</em>'.
+	 * @see IFML.Extensions.Screen
+	 * @generated
+	 */
+	EClass getScreen();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.ToolBar <em>Tool Bar</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Tool Bar</em>'.
+	 * @see IFML.Extensions.ToolBar
+	 * @generated
+	 */
+	EClass getToolBar();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.MobileComponent <em>Mobile Component</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mobile Component</em>'.
+	 * @see IFML.Extensions.MobileComponent
+	 * @generated
+	 */
+	EClass getMobileComponent();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.MobileElementEvent <em>Mobile Element Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mobile Element Event</em>'.
+	 * @see IFML.Extensions.MobileElementEvent
+	 * @generated
+	 */
+	EClass getMobileElementEvent();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.MobileSystemEvent <em>Mobile System Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mobile System Event</em>'.
+	 * @see IFML.Extensions.MobileSystemEvent
+	 * @generated
+	 */
+	EClass getMobileSystemEvent();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.BatteryEvent <em>Battery Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Battery Event</em>'.
+	 * @see IFML.Extensions.BatteryEvent
+	 * @generated
+	 */
+	EClass getBatteryEvent();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.StorageEvent <em>Storage Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Storage Event</em>'.
+	 * @see IFML.Extensions.StorageEvent
+	 * @generated
+	 */
+	EClass getStorageEvent();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.MobileAction <em>Mobile Action</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mobile Action</em>'.
+	 * @see IFML.Extensions.MobileAction
+	 * @generated
+	 */
+	EClass getMobileAction();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.CameraAction <em>Camera Action</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Camera Action</em>'.
+	 * @see IFML.Extensions.CameraAction
+	 * @generated
+	 */
+	EClass getCameraAction();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.MicrophoneAction <em>Microphone Action</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Microphone Action</em>'.
+	 * @see IFML.Extensions.MicrophoneAction
+	 * @generated
+	 */
+	EClass getMicrophoneAction();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.MobileActionEvent <em>Mobile Action Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mobile Action Event</em>'.
+	 * @see IFML.Extensions.MobileActionEvent
+	 * @generated
+	 */
+	EClass getMobileActionEvent();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.CameraActionEvent <em>Camera Action Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Camera Action Event</em>'.
+	 * @see IFML.Extensions.CameraActionEvent
+	 * @generated
+	 */
+	EClass getCameraActionEvent();
+
+	/**
+	 * Returns the meta object for class '{@link IFML.Extensions.MicrophoneActionEvent <em>Microphone Action Event</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Microphone Action Event</em>'.
+	 * @see IFML.Extensions.MicrophoneActionEvent
+	 * @generated
+	 */
+	EClass getMicrophoneActionEvent();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2662,6 +4426,7 @@ public interface ExtensionsPackage extends EPackage {
 	 * <ul>
 	 *   <li>each class,</li>
 	 *   <li>each feature of each class,</li>
+	 *   <li>each operation of each class,</li>
 	 *   <li>each enum,</li>
 	 *   <li>and each data type</li>
 	 * </ul>
@@ -2906,6 +4671,136 @@ public interface ExtensionsPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SET_CONTEXT_EVENT = eINSTANCE.getSetContextEvent();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.ScreenImpl <em>Screen</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.ScreenImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getScreen()
+		 * @generated
+		 */
+		EClass SCREEN = eINSTANCE.getScreen();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.ToolBarImpl <em>Tool Bar</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.ToolBarImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getToolBar()
+		 * @generated
+		 */
+		EClass TOOL_BAR = eINSTANCE.getToolBar();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.MobileComponentImpl <em>Mobile Component</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.MobileComponentImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMobileComponent()
+		 * @generated
+		 */
+		EClass MOBILE_COMPONENT = eINSTANCE.getMobileComponent();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.MobileElementEventImpl <em>Mobile Element Event</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.MobileElementEventImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMobileElementEvent()
+		 * @generated
+		 */
+		EClass MOBILE_ELEMENT_EVENT = eINSTANCE.getMobileElementEvent();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.MobileSystemEventImpl <em>Mobile System Event</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.MobileSystemEventImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMobileSystemEvent()
+		 * @generated
+		 */
+		EClass MOBILE_SYSTEM_EVENT = eINSTANCE.getMobileSystemEvent();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.BatteryEventImpl <em>Battery Event</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.BatteryEventImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getBatteryEvent()
+		 * @generated
+		 */
+		EClass BATTERY_EVENT = eINSTANCE.getBatteryEvent();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.StorageEventImpl <em>Storage Event</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.StorageEventImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getStorageEvent()
+		 * @generated
+		 */
+		EClass STORAGE_EVENT = eINSTANCE.getStorageEvent();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.MobileActionImpl <em>Mobile Action</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.MobileActionImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMobileAction()
+		 * @generated
+		 */
+		EClass MOBILE_ACTION = eINSTANCE.getMobileAction();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.CameraActionImpl <em>Camera Action</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.CameraActionImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getCameraAction()
+		 * @generated
+		 */
+		EClass CAMERA_ACTION = eINSTANCE.getCameraAction();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.MicrophoneActionImpl <em>Microphone Action</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.MicrophoneActionImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMicrophoneAction()
+		 * @generated
+		 */
+		EClass MICROPHONE_ACTION = eINSTANCE.getMicrophoneAction();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.MobileActionEventImpl <em>Mobile Action Event</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.MobileActionEventImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMobileActionEvent()
+		 * @generated
+		 */
+		EClass MOBILE_ACTION_EVENT = eINSTANCE.getMobileActionEvent();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.CameraActionEventImpl <em>Camera Action Event</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.CameraActionEventImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getCameraActionEvent()
+		 * @generated
+		 */
+		EClass CAMERA_ACTION_EVENT = eINSTANCE.getCameraActionEvent();
+
+		/**
+		 * The meta object literal for the '{@link IFML.Extensions.impl.MicrophoneActionEventImpl <em>Microphone Action Event</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see IFML.Extensions.impl.MicrophoneActionEventImpl
+		 * @see IFML.Extensions.impl.ExtensionsPackageImpl#getMicrophoneActionEvent()
+		 * @generated
+		 */
+		EClass MICROPHONE_ACTION_EVENT = eINSTANCE.getMicrophoneActionEvent();
 
 	}
 

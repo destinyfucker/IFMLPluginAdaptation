@@ -5,6 +5,7 @@ package IFML.DataTypes;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
 import org.eclipse.emf.common.util.Enumerator;
 
 /**
@@ -16,8 +17,7 @@ import org.eclipse.emf.common.util.Enumerator;
  * @model
  * @generated
  */
-public enum ContextVariableScope implements Enumerator
-{
+public enum ContextVariableScope implements Enumerator {
 	/**
 	 * The '<em><b>Application Scope</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -27,6 +27,7 @@ public enum ContextVariableScope implements Enumerator
 	 * @ordered
 	 */
 	APPLICATION_SCOPE(0, "ApplicationScope", "ApplicationScope"),
+
 	/**
 	 * The '<em><b>Session Scope</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -36,6 +37,7 @@ public enum ContextVariableScope implements Enumerator
 	 * @ordered
 	 */
 	SESSION_SCOPE(0, "SessionScope", "SessionScope"),
+
 	/**
 	 * The '<em><b>View Container Scope</b></em>' literal object.
 	 * <!-- begin-user-doc -->
@@ -45,6 +47,7 @@ public enum ContextVariableScope implements Enumerator
 	 * @ordered
 	 */
 	VIEW_CONTAINER_SCOPE(0, "ViewContainerScope", "ViewContainerScope");
+
 	/**
 	 * The '<em><b>Application Scope</b></em>' literal value.
 	 * <!-- begin-user-doc -->
@@ -232,4 +235,5 @@ public enum ContextVariableScope implements Enumerator
 	public String toString() {
 		return literal;
 	}
-}
+	
+} //ContextVariableScope

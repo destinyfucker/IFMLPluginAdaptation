@@ -89,7 +89,7 @@ public class InteractionFlowExpressionImpl extends ExpressionImpl implements Int
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.INTERACTION_FLOW_EXPRESSION__INTERACTION_FLOW:

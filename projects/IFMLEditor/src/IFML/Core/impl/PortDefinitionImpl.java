@@ -79,7 +79,7 @@ public class PortDefinitionImpl extends InteractionFlowElementImpl implements Po
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CorePackage.PORT_DEFINITION__PORTS:
@@ -122,7 +122,7 @@ public class PortDefinitionImpl extends InteractionFlowElementImpl implements Po
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.PORT_DEFINITION__PORTS:

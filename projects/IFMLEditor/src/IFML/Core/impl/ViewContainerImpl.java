@@ -232,7 +232,7 @@ public class ViewContainerImpl extends ViewElementImpl implements ViewContainer 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case CorePackage.VIEW_CONTAINER__VIEW_ELEMENTS:
@@ -287,7 +287,7 @@ public class ViewContainerImpl extends ViewElementImpl implements ViewContainer 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case CorePackage.VIEW_CONTAINER__IS_LANDMARK:

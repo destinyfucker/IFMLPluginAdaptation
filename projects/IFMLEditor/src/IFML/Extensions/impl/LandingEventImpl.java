@@ -81,7 +81,7 @@ public class LandingEventImpl extends CatchingEventImpl implements LandingEvent 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
 			case ExtensionsPackage.LANDING_EVENT__JUMPING_EVENTS:
@@ -124,7 +124,7 @@ public class LandingEventImpl extends CatchingEventImpl implements LandingEvent 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
-		@Override
+	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case ExtensionsPackage.LANDING_EVENT__JUMPING_EVENTS:

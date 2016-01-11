@@ -3,6 +3,7 @@
 package IFML.Core;
 
 import IFML.DataTypes.Direction;
+
 import org.eclipse.uml2.uml.Type;
 
 /**
